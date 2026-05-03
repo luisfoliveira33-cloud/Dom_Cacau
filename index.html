@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dom Cacau</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>Dom Cacau</h1>
+<p>Personalize seu pedido</p>
+
+<form method="POST">
+<label>Produto:</label>
+<select name="produto">
+<option value="Pó de Cacau">Pó de Cacau</option>
+<option value="Cacau com Café">Cacau com Café</option>
+</select>
+
+<label>Peso:</label>
+<select name="peso">
+<option value="500g">500g</option>
+<option value="1kg">1kg</option>
+</select>
+
+<label>Quantidade:</label>
+<input type="number" name="quantidade" required min="1">
+
+<button type="submit">Revisar Pedido</button>
+</form>
+</body>
+</html>

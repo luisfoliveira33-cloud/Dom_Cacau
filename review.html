@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Revisão</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>Revisar Pedido</h1>
+
+<p>Produto: {{ pedido.produto }}</p>
+<p>Peso: {{ pedido.peso }}</p>
+<p>Quantidade: {{ pedido.quantidade }}</p>
+
+<a href="/">Editar Pedido</a>
+<a href="/production">Gerar Pedido</a>
+</body>
+</html>
