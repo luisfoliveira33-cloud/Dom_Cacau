@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Projeto Dom Cacau"
+git branch -M main
+git remote add origin https://github.com/Luiszy77/Dom_Cacau.git
+git push -u origin main
